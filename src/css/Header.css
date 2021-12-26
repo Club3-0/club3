@@ -1,6 +1,7 @@
 .fixedNav {
     display: flex;
     justify-content: space-between;
+    margin: auto;
     width: 90%;
   }
 
@@ -17,3 +18,4 @@
 .contactNav {
     background-color: #a2d2ff;
 }
+
