@@ -1,0 +1,19 @@
+.fixedNav {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+  }
+
+.navLinks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navLinks li {
+    padding: 1rem;
+    font-weight: 500;
+}
+
+.contactNav {
+    background-color: #a2d2ff;
+}
