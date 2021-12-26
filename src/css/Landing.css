@@ -1,0 +1,67 @@
+.one {
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 480px;
+    align-items: center;
+    background-color: #cdb4db;
+}
+  
+  .one img {
+    height: 100%;
+    
+  }
+  
+  .one h1 {
+    font-weight: 900;
+    font-size: 3rem;
+    color: white;
+  }
+  
+  .one h2 {
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .one p {
+    color: white;
+  }
+  
+  .one button {
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #ffafcc;
+  }
+  
+.two {
+    height: 100vh;
+    background-color: #FFC8DD;
+}
+.three {
+    height: 100vh;
+    background-color: #FFAFCC;
+}
+.four {
+    height: 100vh;
+    background-color: #BDE0FE;
+}
+.five {
+    height: 100vh;
+    background-color: #A2D2FF;
+}
+.six {
+    height: 100vh;
+    background-color: #cdb4db;
+}
+.seven {
+    height: 100vh;
+    background-color: #FFC8DD;
+}
+.eight {
+    height: 100vh;
+    background-color: #FFAFCC;
+}
