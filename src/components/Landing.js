@@ -2,11 +2,31 @@ import React from 'react'
 import '../css/Landing.css';
 import child3 from '../img/child3.jpg';
 import child2 from '../img/child2.jpg';
+import lax from 'lax.js'
 
 
 const Landing = () => {
+
+    window.onload = function () {
+        lax.init()
+    
+        // Add a driver that we use to control our animations
+        lax.addDriver('scrollY', function () {
+          return window.scrollY
+        })
+    
+        // Add animation bindings to elements
+        lax.addElements('.selector', {
+          scrollY: {
+            translateX: [
+              ["elInY", "elCenterY", "elOutY"],
+              [0, 'screenWidth/2', 'screenWidth'],
+            ]
+          }
+        })
+      }
     return (
-        <div>
+        <div className="selector">
             <section className="main">
                 <section className="one">
                     <img src={child3}/>
