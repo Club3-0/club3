@@ -59,10 +59,10 @@
   height: 50%;
 }
 
-.child {
-  transform: translateY(-3in);
+/* .child {
+  transform: translateY(2in);
   opacity: 1;
-}
+} */
 
 .four {
     height: 100vh;

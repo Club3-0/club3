@@ -3,30 +3,54 @@ import '../css/Landing.css';
 import child3 from '../img/child3.jpg';
 import child2 from '../img/child2.jpg';
 import child1 from '../img/child1.jpg';
+import { gsap } from "gsap";
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger)
 
 
 const Landing = () => {
 
-    useEffect(() => {
-        const childPic = document.querySelector(".child")
+    // useEffect(() => {
+    //     const childImage = document.querySelector(".child")
+        
+    //     const observer = new IntersectionObserver(
+    //         entries => {
 
-        const observer = new IntersectionObserver(
-            entries => {
-            entries.forEach(entry => {
-                entry.target.classList.toggle("child", entry.isIntersecting)
-                // const scrolled = window.pageYOffset;
-                // const rate = scrolled * -1;
-                // entry.target.style.transform = 'translate3d(0px, '+rate+', 0px)'
-            })
-        }, {
-            threshold: 1,
-            rootMargin: "-100px",
-        })
-        console.log(childPic)
-        observer.observe(childPic)
-    }, [])
+    //             entries.forEach(entry => {
+    //             //entry.target.classList.toggle("child", entry.isIntersecting)
+    //             const scrolled = window.pageYOffset;
+    //             const rate = scrolled * -0.1;
+    //             entry.target.style.transform = 'translate3d(0px, '+rate+'px, 0px)'
+
+    //         })
+    //     }, {
+    //         threshold: 0,
+    //         rootMargin: "-100px",
+    //     })
+    //     observer.observe(childImage)
+    // }, [])
+
+    // window.addEventListener('scroll', e => {
+    //     const target = document.querySelector('.child');
+    //     let scrolled = window.pageYOffset;
+    //     let rate = scrolled * 0.5;
+    //     target.style.transform = 'translate3d(0px, '+rate+'px, 0px)'
+    // })
+useEffect(() => {
+    gsap.set(".child", { yPercent: 90});
+    gsap.to(".child", {
+        yPercent: -90,
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".contentContainer",
+          scrub: 1
+        }, 
+      });
+}, [])
 
 
+    
     return (
         <div>
             <section className="main">
