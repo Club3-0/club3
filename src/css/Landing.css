@@ -44,7 +44,26 @@
 .three {
     height: 100vh;
     background-color: #FFAFCC;
+    margin: 0;
+    display: flex;
+
 }
+
+.contentContainer {
+    display: flex;
+    align-items: center;
+    margin: 0 20rem;
+}
+
+.three img {
+  height: 50%;
+}
+
+.child {
+  transform: translateY(-3in);
+  opacity: 1;
+}
+
 .four {
     height: 100vh;
     background-color: #BDE0FE;
