@@ -1,7 +1,27 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../css/Header.css'
+import { gsap } from "gsap";
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger)
 
 const Header = () => {
+
+
+
+    useEffect(() => {
+        gsap.to(".fixedNav", {
+            top: 0,
+            ease: "none",
+            scrollTrigger: {
+                trigger: ".contactNav",
+                start: 1,
+                toggleActions: "play none reverse none",
+                scrub: -1,
+            }, 
+          });
+    }, [])
+
     return (
         <div>
             <div className="contactNav">

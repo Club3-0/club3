@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import '../css/Landing.css';
 import child3 from '../img/child3.jpg';
 import child2 from '../img/child2.jpg';
