@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import '../css/Landing.css';
 import { gsap } from "gsap";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -8,17 +9,17 @@ gsap.registerPlugin(ScrollTrigger)
 
 const Landing = () => {
 
-useEffect(() => {
-    gsap.set(".child", { yPercent: 90});
-    gsap.to(".child", {
-        yPercent: -90,
-        ease: "none",
-        scrollTrigger: {
-          trigger: ".contentContainer",
-          scrub: 1
-        }, 
-      });
-}, [])
+// useEffect(() => {
+//     gsap.set(".child", { yPercent: 90});
+//     gsap.to(".child", {
+//         yPercent: -90,
+//         ease: "none",
+//         scrollTrigger: {
+//           trigger: ".contentContainer",
+//           scrub: 1
+//         }, 
+//       });
+// }, [])
 
 
     
@@ -29,7 +30,7 @@ useEffect(() => {
                     <div>
                         <h2>Club 3</h2>
                         <h1>The solution to the problem,<br /> you actually have.</h1>
-                        <button>Demo</button>
+                        <Link to="/register"><button>Demo</button></Link>
                     </div>
                 </section> 
                 <section className="two">

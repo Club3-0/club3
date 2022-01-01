@@ -1,0 +1,30 @@
+.formContainer {
+    display: flex;
+    justify-content: center;
+    padding: 25% 2%;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    width: 25%;
+}
+
+.label {
+    display: flex;
+    flex-flow: column;
+    text-align: left;
+}
+
+.nameLabel {
+    display: flex;
+    flex-flow: row;
+    text-align: left;
+}
+
+.inputField {
+    margin: 2% 0;
+    border: #d3d3d3 solid 1px;
+    padding: 2%;
+}
