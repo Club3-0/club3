@@ -1,8 +1,5 @@
 import React, { useEffect } from 'react'
 import '../css/Landing.css';
-import child3 from '../img/child3.jpg';
-import child2 from '../img/child2.jpg';
-import child1 from '../img/child1.jpg';
 import { gsap } from "gsap";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -11,32 +8,6 @@ gsap.registerPlugin(ScrollTrigger)
 
 const Landing = () => {
 
-    // useEffect(() => {
-    //     const childImage = document.querySelector(".child")
-        
-    //     const observer = new IntersectionObserver(
-    //         entries => {
-
-    //             entries.forEach(entry => {
-    //             //entry.target.classList.toggle("child", entry.isIntersecting)
-    //             const scrolled = window.pageYOffset;
-    //             const rate = scrolled * -0.1;
-    //             entry.target.style.transform = 'translate3d(0px, '+rate+'px, 0px)'
-
-    //         })
-    //     }, {
-    //         threshold: 0,
-    //         rootMargin: "-100px",
-    //     })
-    //     observer.observe(childImage)
-    // }, [])
-
-    // window.addEventListener('scroll', e => {
-    //     const target = document.querySelector('.child');
-    //     let scrolled = window.pageYOffset;
-    //     let rate = scrolled * 0.5;
-    //     target.style.transform = 'translate3d(0px, '+rate+'px, 0px)'
-    // })
 useEffect(() => {
     gsap.set(".child", { yPercent: 90});
     gsap.to(".child", {
@@ -55,21 +26,14 @@ useEffect(() => {
         <div>
             <section className="main">
                 <section className="one">
-                    <img src={child3}/>
                     <div>
-                        <h1>Jen's Website</h1>
-                        <h2>Prometabolic for Kids</h2>
-                        <p>A simplified guide to providing the best nutrition for your child.</p>
-                        <button>Online Shop</button>
+                        <h2>Club 3</h2>
+                        <h1>The solution to the problem,<br /> you actually have.</h1>
+                        <button>Demo</button>
                     </div>
-                    <img src={child2}/>
                 </section> 
                 <section className="two">
-                    <div className="quoteBox">
-                        Quote Icon
-                        <h2>"In order to be irreplaceable, you have to be different"</h2>
-                        <h3>Coco Chanel</h3>
-                    </div>
+                    <h2>Spend more time<br></br> doing what you love.</h2>
                 </section>
                 <section className="three">
                     <div className="contentContainer">
@@ -79,7 +43,6 @@ useEffect(() => {
                             Frutti Felici Bakery is a European-styled café-patisserie where each customer is treated in a unique manner, respecting his/her individuality and needs. We offer various organic pastries, cookies, cakes, desserts, chocolate-dipped strawberries, and healthy smoothies. Our bakers use the finest quality ingredients and pride themselves on unique, time-tested recipes.  
                             </p>
                         </div>
-                        <img className='child' src={child1}/>
                     </div>
                 </section>
                 <section className="four">

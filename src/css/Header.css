@@ -1,11 +1,12 @@
 .fixedNav {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin: auto;
     width: 100%;
     position: fixed;
     z-index: 10;
-    background-color: white;
+    background-color: #1d1d1f;
+    color: #f5f5f7
 }
 
 .logoName {
@@ -25,35 +26,5 @@
 .navLinks li {
     padding: 1rem;
     font-weight: 500;
-}
-
-.contactNav {
-    background-color: #a2d2ff;
-    display: flex;
-    justify-content: space-around;
-    height: 5vh;
-}
-
-.contactNav ul {
-    display: flex;
-    align-items: center;
-}
-
-.contactLink {
-    padding: 0.5% 0%;
-    width: 17rem;
-}
-
-i {
-    padding-right: 2%;
-}
-
-.fab {
-    width: 1rem;
-    margin-right: 1rem;
-    background-color: white;
-    padding: 0.3rem;
-    border-radius: 50%;
-    
 }
 

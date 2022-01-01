@@ -3,44 +3,48 @@
     display: flex;
     text-align: center;
     justify-content: center;
-    height: 480px;
     align-items: center;
-    background-color: #cdb4db;
+    background-color: #70e000;
 }
-  
-  .one img {
-    height: 100%;
-    
-  }
   
   .one h1 {
     font-weight: 900;
-    font-size: 3rem;
-    color: white;
+    font-size: 8rem;
   }
   
   .one h2 {
     font-weight: 900;
     font-size: 1.5rem;
-    color: rgba(255, 255, 255, 0.7);
-  }
-  
-  .one p {
-    color: white;
   }
   
   .one button {
-    padding: 1rem;
+    font-size: 2rem;
+    padding: 1rem 2rem;
     border: none;
     border-radius: 5px;
     color: white;
-    background-color: #ffafcc;
+    background-color: #1d1d1f;
   }
   
 .two {
     height: 100vh;
-    background-color: #FFC8DD;
+    width: 100%;
+    background-color: #fbfbfd;
+    background-image: url("../img/averyharper2.jpg");
+    background-position: 50% 5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fbfbfd;
+    font-size: 8rem;
 }
+
+.two h2 {
+  margin-left: 5%;
+}
+
 .three {
     height: 100vh;
     background-color: #FFAFCC;
