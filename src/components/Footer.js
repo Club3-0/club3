@@ -15,7 +15,6 @@ const Footer = () => {
                     <li>Facebook Icon</li>
                     <li>Instagram Icon</li>
                 </ul>
-                <button>Scroll back to top icon</button>
             </footer>
         </div>
     )

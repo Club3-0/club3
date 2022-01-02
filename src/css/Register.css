@@ -1,0 +1,60 @@
+.formContainer {
+    display: flex;
+    justify-content: center;
+    padding: 5% 2%;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    width: 25%;
+}
+
+.form h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.label {
+    display: flex;
+    flex-flow: column;
+    text-align: left;
+}
+
+.label p {
+    color: #666666;
+}
+
+.nameLabel {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row;
+    text-align: left;
+}
+
+.inputField {
+    margin: 2% 0;
+    border: #d3d3d3 solid 1px;
+    border-radius: 5px;
+    padding: 4% 2%;
+}
+
+.nameInputField {
+    margin: 2% 0;
+    border: #d3d3d3 solid 1px;
+    border-radius: 5px;
+    padding: 4% 2%;
+    width: 12.5rem;
+}
+
+/* .button {
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #1d1d1f;
+    width: 50%;
+    margin: auto;
+} */

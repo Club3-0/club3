@@ -36,7 +36,7 @@ const Landing = () => {
                 <section className="two">
                     <h2>Spend more time<br></br> doing what you love.</h2>
                 </section>
-                <section className="three">
+                {/* <section className="three">
                     <div className="contentContainer">
                         <div>
                             <h1>About us</h1>
@@ -83,7 +83,7 @@ const Landing = () => {
                 <section className="eight">
                     <h2>What our Customers say:</h2>
                     <p>CAROUSEL HERE</p>
-                </section>
+                </section> */}
             </section>
         </div>
     )

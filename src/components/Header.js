@@ -1,5 +1,6 @@
-import React, { useEffect } from 'react'
-import '../css/Header.css'
+import React, { useEffect } from 'react';
+import '../css/Header.css';
+import { Link } from 'react-router-dom';
 import { gsap } from "gsap";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -29,9 +30,9 @@ const Header = () => {
             </div>
             <nav>
                 <ul className="navLinks">
-                    <li>Home</li>
-                    <li>Demo</li>
-                    <li>Support</li>
+                    <Link to="/"><li>Home</li></Link>
+                    <Link to="/register"><li>Demo</li></Link>
+                    {/* <li>Support</li> */}
                 </ul>
             </nav>
         </div>
