@@ -42,12 +42,12 @@ table {
 	border-spacing: 0;
 }
 /* Reset Done */
-/* html {
+html {
 	box-sizing: border-box;
   }
   *, *:before, *:after {
 	box-sizing: inherit;
-  } */
+  }
 
 body {
   text-align: center;
