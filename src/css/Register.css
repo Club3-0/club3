@@ -1,18 +1,18 @@
 .formContainer {
     display: flex;
     justify-content: center;
-    padding: 5% 2%;
+    padding: 6rem 0;
 }
 
 .form {
     display: flex;
     justify-content: center;
     flex-flow: column;
-    width: 25%;
+    width: fit-content;
 }
 
 .form h2 {
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: 700;
 }
 
@@ -20,6 +20,7 @@
     display: flex;
     flex-flow: column;
     text-align: left;
+    
 }
 
 .label p {
@@ -28,7 +29,6 @@
 
 .nameLabel {
     display: flex;
-    justify-content: space-between;
     flex-flow: row;
     text-align: left;
 }
@@ -37,24 +37,28 @@
     margin: 2% 0;
     border: #d3d3d3 solid 1px;
     border-radius: 5px;
-    padding: 4% 2%;
+    padding: 6% 4%;
+    width: 100%;
 }
 
-.nameInputField {
-    margin: 2% 0;
-    border: #d3d3d3 solid 1px;
-    border-radius: 5px;
-    padding: 4% 2%;
-    width: 12.5rem;
+.lastName {
+    margin-left: 2%; 
 }
 
-/* .button {
-    font-size: 2rem;
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    background-color: #1d1d1f;
-    width: 50%;
-    margin: auto;
-} */
+@media (max-width: 768px){
+    .nameLabel {
+        flex-flow: column;
+    }
+    .lastName {
+        margin-left: 0;
+    }
+    .form h2 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 600px){
+    .form h2 {
+        font-size: 2rem;
+    }
+}

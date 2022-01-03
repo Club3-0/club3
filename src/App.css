@@ -42,6 +42,13 @@ table {
 	border-spacing: 0;
 }
 /* Reset Done */
+html {
+	box-sizing: border-box;
+  }
+  *, *:before, *:after {
+	box-sizing: inherit;
+  }
+
 body {
   text-align: center;
   margin: 0;
@@ -73,7 +80,8 @@ button {
     border-radius: 5px;
     color: white;
     background-color: #1d1d1f;
-    margin: auto;
+    margin: 2rem auto;
+	width: fit-content;
 }
 
 button:hover {

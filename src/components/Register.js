@@ -45,7 +45,7 @@ const Register = () => {
                 <label className='nameLabel'> 
                     <input 
                         autoComplete='off'
-                        className='nameInputField' 
+                        className='inputField' 
                         type="text" 
                         placeholder='First name'
                         name="firstName"
@@ -53,7 +53,7 @@ const Register = () => {
                         onChange={handleInputChange} />
                     <input 
                         autoComplete='off'
-                        className='nameInputField' 
+                        className='inputField lastName' 
                         type="text" 
                         placeholder='Last name'
                         name="lastName"
