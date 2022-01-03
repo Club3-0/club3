@@ -11,6 +11,10 @@ section {
   background-color: #fbfbfd;
 }
 
+.main {
+  height: 100vh;
+}
+
 .one {
     height: 100vh;
     background-color: #70e000;
@@ -36,19 +40,25 @@ section {
 }
 
 .three {
-    height: 100vh;
-    margin: 0;
+  height: 100vh;
+  background-image: url("../img/Deskwork.jpg");
+  background-position: 0% 90%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: flex-end;
+}
 
+.three h1 {
+  background-color: white;
+  padding: 2%;
+  border-radius: 1rem;
+  margin-right: 2%;
 }
 
 .contentContainer {
     display: flex;
     align-items: center;
     margin: 0 20rem;
-}
-
-.three img {
-  height: 50%;
 }
 
 /* .child {
