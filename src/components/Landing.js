@@ -20,11 +20,13 @@ const Landing = () => {
                 snap: 1 / (sections.length - 1),
                 pin: true,
                 scrub: 1,
+                id: "landing-effect"
             }, 
           });
+          
     }, [])
 
-
+    
     
     return (
         <div>
