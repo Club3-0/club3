@@ -28,8 +28,8 @@ const Register = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        
-        axios.post('https://reqres.in/api/register', {userInfo})
+        console.log(userInfo);
+        axios.post('https://reqres.in/api/register', userInfo)
         .then((res) => {
             console.log(res);
         })
@@ -74,7 +74,7 @@ const Register = () => {
                     <input 
                         autoComplete='off'
                         className='inputField' 
-                        type="text" 
+                        type="email" 
                         placeholder='Your email'
                         name="email"
                         value={state.email}
