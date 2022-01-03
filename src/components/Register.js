@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useLayoutEffect } from 'react'
 import axios from 'axios';
 import '../css/Register.css'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -17,7 +17,7 @@ const Register = () => {
     const [state, setState] = useState(initialState);
     const userInfo = {email: state.email, password: state.password}
     
-    useEffect(() => {
+    useLayoutEffect(() => {
         ScrollTrigger.getById("landing-effect").kill();
     }, [])
 
