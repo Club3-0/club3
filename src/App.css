@@ -73,7 +73,6 @@ button {
     border-radius: 5px;
     color: white;
     background-color: #1d1d1f;
-    width: 10rem;
     margin: auto;
 }
 
@@ -82,3 +81,10 @@ button:hover {
     background-color: white;
 	border: solid #1d1d1f 2px;
 }
+
+@media (max-width: 600px) {
+	button {
+		font-size: 1.5rem;
+		padding: 0.5rem 1rem;
+	}
+  }

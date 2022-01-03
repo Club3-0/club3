@@ -4,6 +4,7 @@ h1 {
 }
 
 section {
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,7 +27,6 @@ section {
 }
   
 .two {
-    height: 100vh;
     width: 100%;
     background-image: url("../img/averyharper2.jpg");
     background-position: 50% 5%;
@@ -40,7 +40,6 @@ section {
 }
 
 .three {
-  height: 100vh;
   background-image: url("../img/Deskwork.jpg");
   background-position: 0% 90%;
   background-repeat: no-repeat;
@@ -61,28 +60,35 @@ section {
     margin: 0 20rem;
 }
 
-/* .child {
-  transform: translateY(2in);
-  opacity: 1;
-} */
+@media (max-width: 1400px) {
+  .two h1 {
+    margin: 0 0 10% 5%;
+    font-size: 4rem;
+  }
+}
 
-.four {
-    height: 100vh;
-    background-color: #BDE0FE;
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 4rem;
+  }
+  .two h1 {
+    margin: 0 0 10% 8%;
+    font-size: 3.5rem;
+  }
 }
-.five {
-    height: 100vh;
-    background-color: #A2D2FF;
+
+@media (max-width: 992px) {
+
 }
-.six {
-    height: 100vh;
-    background-color: #cdb4db;
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
 }
-.seven {
-    height: 100vh;
-    background-color: #FFC8DD;
-}
-.eight {
-    height: 100vh;
-    background-color: #FFAFCC;
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
 }
