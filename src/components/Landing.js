@@ -20,11 +20,15 @@ const Landing = () => {
                 snap: 1 / (sections.length - 1),
                 pin: true,
                 scrub: 1,
-                id: "landing-effect"
             }, 
-          });
-          
+          })
+        gsap.timeline()
+            .fromTo('.club3', {y: '50%'}, {duration: 1, y: '0%'})
+            .fromTo('.solution', { opacity: '0%', y: '50%'}, {duration: 1, opacity: '100%', y: '0%'})
+            .fromTo('.problem', { opacity: '0%', y: '50%'}, {duration: 1, opacity: '100%', y: '0%'})
+            .fromTo('.demoButton', { opacity: '0%'}, {duration: 1, opacity: '100%'})
     }, [])
+    
     
     
     
@@ -33,9 +37,10 @@ const Landing = () => {
             <div className="main">
                 <section className="one section">
                     <div>
-                        <h2>Club 3</h2>
-                        <h1>The solution to the problem,<br /> you actually have.</h1>
-                        <Link to="/register"><button>Demo</button></Link>
+                        <h2 className='club3'>Club 3</h2>
+                        <h1 className='solution'>The solution,</h1>
+                        <h1 className='problem'>to the problem you actually have.</h1>
+                        <Link to="/register"><button className='demoButton'>Demo</button></Link>
                     </div>
                 </section> 
                 <section className="two section">

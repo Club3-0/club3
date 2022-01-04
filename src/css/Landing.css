@@ -23,7 +23,7 @@ section {
   
 .one h2 {
   font-weight: 900;
-  font-size: 1.5rem;
+  font-size: 5rem;
 }
   
 .two {
@@ -59,6 +59,7 @@ section {
     align-items: center;
     margin: 0 20rem;
 }
+
 
 @media (max-width: 1400px) {
   .two h1 {
