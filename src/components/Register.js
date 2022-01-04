@@ -86,7 +86,7 @@ const Register = () => {
                     <input 
                         autoComplete='off'
                         className='inputField' 
-                        type="email" 
+                        type="text" 
                         placeholder='Your email'
                         name="email"
                         value={state.email}
