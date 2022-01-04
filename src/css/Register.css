@@ -16,6 +16,11 @@
     font-weight: 700;
 }
 
+.error {
+    color: red;
+    text-align: left;
+}
+
 .label {
     display: flex;
     flex-flow: column;
