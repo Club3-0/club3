@@ -17,9 +17,7 @@ const Register = () => {
     const [state, setState] = useState(initialState);
     const userInfo = {email: state.email, password: state.password}
     
-    useLayoutEffect(() => {
-        ScrollTrigger.getById("landing-effect").kill();
-    }, [])
+
 
     const handleInputChange = (e) => {
         const target = e.target;
