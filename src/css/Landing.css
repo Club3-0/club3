@@ -78,8 +78,17 @@ section {
   }
 }
 
-@media (max-width: 992px) {
-
+@media only screen and (orientation: portrait) {
+  .two {
+    width: 100%;
+    background-image: url("../img/keaganportrait.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .two h1 {
+    margin: 0 0 20% 5%;
+    color: black;
+  }
 }
 
 @media (max-width: 768px) {
@@ -91,5 +100,9 @@ section {
 @media (max-width: 600px) {
   h1 {
     font-size: 2rem;
+  }
+  .two h1 {
+    font-size: 2rem;
+    margin: 0 0 70% 5%;
   }
 }
