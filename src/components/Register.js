@@ -1,6 +1,7 @@
 import React, { useState, useLayoutEffect } from 'react'
 import axios from 'axios';
 import '../css/Register.css'
+import { userSchema } from '../Validations/UserValidation';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const initialState = {
@@ -15,9 +16,16 @@ const initialState = {
 
 const Register = () => {
     const [state, setState] = useState(initialState);
-    const userInfo = {email: state.email, password: state.password}
+    const userInfo = {
+        firstName: state.firstName,
+        lastName: state.lastName,
+        phone: state.phone,
+        email: state.email,
+        password: state.password,
+        confirm: state.confirm,
+        club: state.club,
+    }
     
-
 
     const handleInputChange = (e) => {
         const target = e.target;
@@ -29,16 +37,17 @@ const Register = () => {
         });
     } 
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log(userInfo);
-        axios.post('https://reqres.in/api/register', userInfo)
-        .then((res) => {
-            console.log(res);
-        })
-        .catch((err) => {
-            console.log(err);
-        })
+        const isValid = await userSchema.isValid(userInfo);
+        console.log(isValid);
+        // axios.post('https://reqres.in/api/register', userInfo)
+        // .then((res) => {
+        //     console.log(res);
+        // })
+        // .catch((err) => {
+        //     console.log(err);
+        // })
     }
     return (
         <div className='formContainer'>
