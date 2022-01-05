@@ -85,6 +85,12 @@ section {
   }
 }
 
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
 @media only screen and (orientation: portrait) {
   .two {
     width: 100%;
@@ -97,13 +103,23 @@ section {
     margin: 0 0 20% 5%;
     color: black;
   }
-}
-
-@media (max-width: 768px) {
-  h1 {
-    font-size: 3rem;
+  .three {
+    background-image: url("../img/portraitDesk.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: flex-end;
+  }
+  
+  .three h1 {
+    background-color: white;
+    padding: 2%;
+    border-radius: 1rem;
+    margin-right: 2%;
   }
 }
+
+
 
 @media (max-width: 800px) and (orientation: portrait) {
   h1 {

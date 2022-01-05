@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../css/Landing.css';
 import { gsap } from "gsap";
+import { ExpoScaleEase, RoughEase, SlowMo } from "gsap/EasePack";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger)
@@ -21,6 +22,8 @@ const Landing = () => {
             .fromTo('.solution', { opacity: '0%', y: '50%'}, {duration: 1, opacity: '100%', y: '0%'})
             .fromTo('.problem', { opacity: '0%', y: '50%'}, {duration: 1, opacity: '100%', y: '0%'})
             .fromTo('.demoButton', { opacity: '0%'}, {duration: 1, opacity: '100%'})
+
+        //gsap.fromTo(".two", 10, {scale:0.1}, {scale:8, ease:ExpoScaleEase.config(0.1, 8)});
         
             return () => {
                 tl.kill();
@@ -42,7 +45,7 @@ const Landing = () => {
                     </div>
                 </section> 
                 <section className="two panel">
-                    <h1>Spend more time<br></br> doing what you love.</h1>
+                    <h1 className='time'>Spend more time<br></br> doing what you love.</h1>
                 </section>
                 <section className="three panel">
                     <h1>Automated <br />membership<br /> management</h1>
