@@ -11,17 +11,10 @@ const Landing = () => {
 
     
     useEffect(() => {
-        let sections = gsap.utils.toArray("section");
-        const scrollAnimation = gsap.to(sections, {
-            yPercent: -100 * (sections.length - 1),
-            ease: "none",
-            scrollTrigger: {
-                trigger: ".main",
-                snap: 1 / (sections.length - 1),
-                pin: true,
-                scrub: 1,
-            }, 
-          })
+        ScrollTrigger.defaults({
+            toggleActions: "restart pause resume pause",
+            scroller: ".main"
+          });
 
         const tl = gsap.timeline()
             .fromTo('.club3', {y: '50%'}, {duration: 1, y: '0%'})
@@ -30,7 +23,6 @@ const Landing = () => {
             .fromTo('.demoButton', { opacity: '0%'}, {duration: 1, opacity: '100%'})
         
             return () => {
-                scrollAnimation.kill();
                 tl.kill();
             }
         
@@ -41,7 +33,7 @@ const Landing = () => {
     return (
         <div>
             <div className="main">
-                <section className="one section">
+                <section className="one panel">
                     <div>
                         <h2 className='club3'>Club 3</h2>
                         <h1 className='solution'>The solution,</h1>
@@ -49,10 +41,10 @@ const Landing = () => {
                         <Link to="/register"><button className='demoButton'>Demo</button></Link>
                     </div>
                 </section> 
-                <section className="two section">
+                <section className="two panel">
                     <h1>Spend more time<br></br> doing what you love.</h1>
                 </section>
-                <section className="three section">
+                <section className="three panel">
                     <h1>Automated <br />membership<br /> management</h1>
                 </section>
                 {/* <section className="four">
