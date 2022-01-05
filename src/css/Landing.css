@@ -18,7 +18,7 @@ section {
 }
 
 .main {
-  max-height: 100vh;
+  height: 100vh;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
 }
@@ -113,6 +113,9 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: flex-end;
+  }
+  .textBox {
+    margin-bottom: 20rem;
   }
 }
 
