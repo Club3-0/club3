@@ -116,17 +116,18 @@ section {
   }
 }
 
-
-
 @media (max-width: 660px) and (orientation: portrait) {
   h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1rem;
   }
 }
 
-@media (max-width: 530px) and (orientation: portrait) {
+@media (max-width: 410px) and (orientation: portrait) {
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
   p {
     font-size: 1rem;
