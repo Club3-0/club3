@@ -22,6 +22,7 @@ const Landing = () => {
                 scrub: 1,
             }, 
           })
+
         const tl = gsap.timeline()
             .fromTo('.club3', {y: '50%'}, {duration: 1, y: '0%'})
             .fromTo('.solution', { opacity: '0%', y: '50%'}, {duration: 1, opacity: '100%', y: '0%'})
@@ -35,7 +36,6 @@ const Landing = () => {
         
     }, [])
     
-    // test
     
     
     return (
