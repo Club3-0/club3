@@ -9,6 +9,7 @@ section {
   justify-content: center;
   align-items: center;
   text-align: center;
+  flex-direction: column;
   background-color: #fbfbfd;
 }
 
@@ -24,8 +25,16 @@ section {
 }
 
 .one {
-    height: 100vh;
-    background-color: #70e000;
+  background-image: url("../img/lightbulb.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fbfbfd;
+  justify-content: flex-start;
+}
+
+.one div {
+  margin-top: 5rem;
 }
   
 .one h2 {
