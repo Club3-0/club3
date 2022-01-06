@@ -12,7 +12,7 @@ const Landing = () => {
     
     useEffect(() => {
         ScrollTrigger.defaults({
-            toggleActions: "restart pause resume pause",
+            toggleActions: "restart pause resume reverse",
             scroller: ".main"
           });
 
@@ -23,10 +23,10 @@ const Landing = () => {
             .fromTo('.line3', { opacity: '0%', y: '50%'}, {duration: 1, opacity: '100%', y: '0%'})
         
         const textTL1 = gsap.timeline({scrollTrigger: { trigger: ".two .textBox" } })
-            .fromTo('.two .textBox', { opacity: '0%', y: '50%'}, {duration: 1, opacity: '100%', y: '0%'})
+            .fromTo('.two .textBox', { autoAlpha: '0%', y: '50%'}, {duration: 1, autoAlpha: '100%', y: '0%'})
 
         const textTL2 = gsap.timeline({scrollTrigger: { trigger: ".three .textBox" } })
-            .fromTo('.three .textBox', { opacity: '0%', y: '50%'}, {duration: 1, opacity: '100%', y: '0%'})
+            .fromTo('.three .textBox', { autoAlpha: '0%', y: '50%'}, {duration: 1, autoAlpha: '100%', y: '0%'})
 
 
             return () => {
@@ -47,7 +47,7 @@ const Landing = () => {
                         <h2 className='club3'>Club 3</h2>
                         <h1 className='line1'>Spend more time,</h1>
                         <h1 className='line2'>doing what you love.</h1>
-                        <h3 className='line3'>Software built for directors, by a director.</h3>
+                        <p className='line3'>Software built for directors, by a director.</p>
                         <Link to="/register"><button className='demoButton'>Demo</button></Link>
                     </div>
                 </section> 
