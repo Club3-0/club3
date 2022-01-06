@@ -18,9 +18,8 @@ const Landing = () => {
 
         const tl = gsap.timeline()
             .fromTo('.club3', {y: '50%'}, {duration: 1, y: '0%'})
-            .fromTo('.line1', { opacity: '0%', y: '50%'}, {duration: 1, opacity: '100%', y: '0%'})
-            .fromTo('.line2', { opacity: '0%', y: '50%'}, {duration: 1, opacity: '100%', y: '0%'})
-            .fromTo('.line3', { opacity: '0%', y: '50%'}, {duration: 1, opacity: '100%', y: '0%'})
+            .fromTo('.solution', { opacity: '0%', y: '50%'}, {duration: 1, opacity: '100%', y: '0%'})
+            .fromTo('.problem', { opacity: '0%', y: '50%'}, {duration: 1, opacity: '100%', y: '0%'})
             .fromTo('.demoButton', { opacity: '0%'}, {duration: 1, opacity: '100%'})
         
         const textTL1 = gsap.timeline({scrollTrigger: { trigger: ".two .textBox" } })
@@ -46,16 +45,15 @@ const Landing = () => {
                 <section className="one panel">
                     <div>
                         <h2 className='club3'>Club 3</h2>
-                        <h1 className='line1'>Spend more time,</h1>
-                        <h1 className='line2'>doing what you love.</h1>
-                        <h3 className='line3'>Software built for directors, by a director.</h3>
+                        <h1 className='solution'>The solution,</h1>
+                        <h1 className='problem'>to the problem you actually have.</h1>
                         <Link to="/register"><button className='demoButton'>Demo</button></Link>
                     </div>
                 </section> 
                 <section className="two panel">
                     <div className='textBox'>
                         <h1>Automated Membership Management</h1>
-                        <p>Spend less time talking about payments, and more time coaching.</p>
+                        <p>Spend more time doing what you love.</p>
                     </div>
                 </section>
                 <section className="three panel">

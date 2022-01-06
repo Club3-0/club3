@@ -34,14 +34,11 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #fbfbfd;
-  flex-direction: row;
   justify-content: flex-start;
-  text-align: left;
 }
 
 .one div {
   margin-top: 5rem;
-  margin-left: 5rem;
 }
   
 .one h2 {
