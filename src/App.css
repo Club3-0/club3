@@ -74,8 +74,9 @@ a:hover {
 }
 
 button {
-	font-size: 2rem;
-    padding: 1rem 2rem;
+	font-size: 1rem;
+	font-weight: 700;
+    padding: .5rem 1rem;
     border: solid #1d1d1f 2px;
     border-radius: 5px;
     color: white;
@@ -90,9 +91,3 @@ button:hover {
 	border: solid #1d1d1f 2px;
 }
 
-@media (max-width: 600px) {
-	button {
-		font-size: 1.5rem;
-		padding: 0.5rem 1rem;
-	}
-  }
