@@ -11,7 +11,7 @@ const Header = () => {
     return (
         <div className="fixedNav">
             <div className='logoName'>
-                <img src='' alt='Club 3' />
+                <p>Club 3</p>
             </div>
             <nav>
                 <ul className="navLinks">
